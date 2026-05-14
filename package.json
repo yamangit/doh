@@ -1,0 +1,25 @@
+{
+  "name": "doh-anywhere",
+  "version": "1.0.0",
+  "description": "Production-grade local DNS-over-HTTPS gateway that any app can use through standard DNS.",
+  "type": "module",
+  "bin": {
+    "doh-anywhere": "./src/cli.js"
+  },
+  "scripts": {
+    "start": "node ./src/cli.js",
+    "check": "node --check ./src/*.js && node --check ./test/*.test.js",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=20.11"
+  },
+  "keywords": [
+    "dns",
+    "doh",
+    "dns-over-https",
+    "proxy",
+    "privacy"
+  ],
+  "license": "MIT"
+}
